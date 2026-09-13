@@ -2218,16 +2218,21 @@ button {
   .section {
     padding-block: 6.5rem;
   }
+}
+/* Profile Photo */
 .profile-photo {
-  width: 100%;
-  height: 100%;
+  width: 96px;
+  height: 96px;
   object-fit: cover;
   object-position: center 25%;
   border-radius: 50%;
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
-.avatar-emblem {
-  overflow: hidden;
-}
+/* Keep the decorative ring above the photo */
+.emblem-ring {
+  z-index: 2;
+  pointer-events: none;
 }
